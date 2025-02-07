@@ -1,0 +1,154 @@
+.carte {
+  position: relative;
+  background-color: var(--couleur-gris5);
+  color: var(--couleur-noir);
+  /*border: 0px var(--couleur-gris4) solid;*/
+  /*box-shadow: 0 2px 6px 0 var(--couleur-noir), 0 2px 10px 0 var(--couleur-noir);*/
+  cursor: pointer;
+  padding:10px;
+  transition: 0.2s;
+  &:hover {
+    transform: scale(1.02);
+}
+
+.carte header {
+  padding: 10px;
+  background-color: var(--couleur-gris5);
+}
+
+.carte picture {
+  overflow: hidden;
+}
+
+.carte picture img {
+  transform-origin: top;
+  transition: scale 100ms ease-in;
+}
+
+.carte picture:hover img {
+  scale: 2;
+  transition: scale 800ms ease-out;
+}
+
+.status {
+  justify-content: space-between;
+}
+
+.carte .contenu {
+  padding: 10px;
+}
+
+.offre {
+  justify-content: space-between;
+  padding: 10px;
+  bottom: 0px;
+  align-items: center;
+  align-content: center;
+}
+
+small {
+  margin-bottom: 10px;
+}
+
+.produit-titre {
+  border-bottom: 1px solid black;
+  margin: 15px 0;
+  padding: 15px 0;
+}
+
+.border {
+  border-bottom: 1px solid black;
+}
+
+.nomdumembre {
+  font-weight: 600;
+}
+
+.prix {
+  font-weight: 600;
+}
+
+.produit-info {
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.justify {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mises {
+  padding-top: 5px;
+}
+
+.status-rouge {
+  font-weight: 700;
+  margin-left: 5px;
+  align-items: center;
+}
+
+.date-duration {
+  font-size: 12px;
+}
+
+.plus_info {
+  margin-right: 5px;
+  align-self: center;
+}
+
+.plus_info img:hover {
+  color: var(--couleur-rouge);
+}
+
+article a {
+  color: black;
+  font-weight: 600;
+}
+
+article a:hover {
+  color: var(--couleur-rouge);
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: var(--couleur-rouge);
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-family: "Inter", "sans-serif";
+}
+
+.tag_coupsdecouer {
+	width: fit-content;
+  position: absolute;
+
+	padding: 10px;
+	background-color: var(--couleur-rouge);
+  color: white;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-style: normal;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.tag_raretes {
+	width: fit-content;
+  position: absolute;
+
+	padding: 10px;
+	background-color: var(--couleur-primaire-or);
+  color: white;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-style: normal;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}

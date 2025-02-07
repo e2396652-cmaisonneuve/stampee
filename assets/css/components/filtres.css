@@ -1,0 +1,80 @@
+.filtres aside {
+  min-width: 190px;
+  max-width: 290px;
+  color: black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reference: Pure CSS Accordion https://codepen.io/raubaca/pen/PZzpVe */
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+  background-color: var(--couleur-gris5);
+  color: var(--couleur-fonce-gris);
+  cursor: pointer;
+}
+.tab input:checked ~ .tab__content {
+  max-height: 10rem;
+}
+
+/* Styles visuels */
+.accordion {
+  overflow: hidden;
+  color: black;
+  background-color: var(--couleur-fonce-gris);
+  width: 100%;
+}
+.tab__label,
+.tab__close {
+  display: flex;
+  color: black;
+  background: #d7d7d7;
+  cursor: pointer;
+  font-weight: 600;
+}
+.tab__label {
+  justify-content: space-between;
+  padding: 1rem;
+}
+.tab__label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transform: rotate(90deg);
+  transition: all 0.35s;
+}
+.tab input:checked + .tab__label::after {
+  transform: rotate(270deg);
+}
+.tab__content p {
+  margin: 0;
+  padding: 1rem;
+}
+.tab__close {
+  justify-content: flex-end;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+.accordion--radio {
+  --theme: var(--secondary);
+}
+
+.effacer {
+  color: var(--couleur-gris2);
+  text-decoration: underline;
+  font-size: 13px;
+  line-height: 30px;
+  cursor: pointer;
+}

@@ -1,0 +1,42 @@
+.titre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: absolute;
+  color: var(--coco);
+  text-align: center;
+  max-width: 45ch;
+  padding: 5rem;
+}
+
+.img-hero {
+  max-width: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+/*----------- Écran de 1180px et moins ---------------*/
+
+@media screen and (max-width: 1180px) {
+  .titre {
+    gap: 10px;
+    padding: 2rem;
+  }
+}
+
+/*----------- Écran de 720px et moins ---------------*/
+
+@media screen and (max-width: 720px) {
+  .titre {
+    gap: 0px;
+    padding: 1rem;
+  }
+
+  .img-hero {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 250px;
+    object-fit: cover;
+  }
+}

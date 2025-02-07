@@ -1,0 +1,23 @@
+.top_tri {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  
+    & p {
+      margin: 0;
+      text-align: center;
+      margin-left: 5px;
+      color: var(--couleur-fonce-gris);
+      font-size: qrem;
+    }
+  }
+  
+  select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    color: var(--couleur-fonce-gris);
+    padding: 10px;
+  }

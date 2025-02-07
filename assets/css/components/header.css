@@ -1,0 +1,117 @@
+.header_navigation {
+  background-color: var(--couleur-bleu);
+}
+
+.header_navigation-haut {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--couleur-bleu_fonce);
+  padding: 10px;
+}
+
+.navigation_reseaux {
+  display: flex;
+  gap: 1em;
+}
+
+.navigation_reseaux a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation_reseaux a:hover {
+  text-decoration: none;
+}
+
+.navigation_parametres {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.dropdown_parametres-monnaie,
+.dropdown_parametres-langue {
+  position: relative;
+}
+
+.boutton_parametres-monnaie,
+.boutton_parametres-langue {
+  color: #fff;
+  border: 1px solid #ffffff;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+
+.dropdown_monnaie-contenus,
+.dropdown_langue-contenus {
+  display: none;
+  position: absolute;
+  background-color: var(--couleur-bleu_fonce);
+  color: #fff;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.dropdown_parametres-monnaie:hover .dropdown_monnaie-contenus,
+.dropdown_parametres-langue:hover .dropdown_langue-contenus {
+  display: block;
+}
+
+.header_navigation-bas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  max-width: 1440px;
+  margin: 15px auto;
+}
+
+.logo_header a {
+  display: block;
+}
+
+.header_deuxieme_navigation {
+  display: flex;
+  gap: 1em;
+}
+
+.header_deuxieme_navigation a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.header_deuxieme_navigation a:hover {
+  font-weight: 600;
+  color: var(--couleur-bleu_clair);
+}
+
+.header_login {
+  display: flex;
+  gap: 3em;
+}
+
+.header_login a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header_login a:hover {
+  text-decoration: underline;
+}
+
+.selected {
+  font-weight: 600;
+  text-decoration: underline;
+  border-bottom: 0px solid #fff;
+  background-color: var(--couleur-rouge);
+  padding: 10px;
+}

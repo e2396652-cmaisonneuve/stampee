@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mariana">
+    <!-- Making sure the web-site will scale fine on mobiles-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta description, aim for about 150 characters-->
+    <meta name="description" content="Lorem ipsum">
+    <!-- Site title-->
+    <title>Stampee - Catalogue ~ Mariana</title>
+    <!-- Stylesheets-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon_io/site.webmanifest">
+</head>
+
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header_navigation">
+            <div class="header_navigation-haut">
+                <nav class="navigation_reseaux">
+                    <div>
+                        <a class="social__link" href="https://www.facebook.com/">
+                            <img class="social__icon" src="assets/img/svg/icon_facebook.svg" width="16" height="16"
+                                alt="Facebook">
+                        </a>
+                    </div>
+                    <div>
+                        <a class="social__link" href="https://www.instagram.com/">
+                            <img class="social__icon" src="assets/img/svg/icon_instagram.svg" width="16" height="16"
+                                alt="Instagram">
+                        </a>
+                    </div>
+                    <div>
+                        <a class="social__link" href="https://www.linkedin.com/">
+                            <img class="social__icon" src="assets/img/svg/icon_linkedin.svg" width="16" height="16"
+                                alt="LinkedIn">
+                        </a>
+                    </div>
+                    <div>
+                        <a class="social__link" href="https://www.youtube.com/">
+                            <img class="social__icon" src="assets/img/svg/icon_youtube.svg" width="16" height="16"
+                                alt="Youtube">
+                        </a>
+                    </div>
+                </nav>
+                <div class="navigation_parametres">
+                    <div class="dropdown_parametres-monnaie">
+                        <div class="boutton_parametres-monnaie">AUD <span class="fa-solid fa-chevron-down"></span></div>
+                        <div class="dropdown_monnaie-contenus">
+                            <p>CAD</p>
+                            <p>USD</p>
+                            <p>GBP</p>
+                        </div>
+                    </div>
+                    <div class="dropdown_parametres-langue">
+                        <div class="boutton_parametres-langue">ENGLISH <span class="fa-solid fa-chevron-down"></span>
+                        </div>
+                        <div class="dropdown_langue-contenus">
+                            <p>FRANÇAIS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="header_navigation-bas padding">
+                <div class="logo_header">
+                    <a href="index.html">
+                        <picture>
+                            <img src="assets/img/svg/stampee_logo.svg" width="220px" alt="logo stampee">
+                        </picture>
+                    </a>
+                </div>
+                <div class="header_deuxieme_navigation">
+                    <a href="index.html">Accueil</a>
+                    <a href="apropos.html">À propos</a>
+                    <a href="catalogue.html" class="selected">Enchères</a>
+                    <!-- <a href="actualites.html">Actualités</a> -->
+                </div>
+                <div class="header_login">
+                    <a class="social__link" target="_parent" href="">
+                        <img class="social__icon" src="assets/img/svg/icon_user.svg" width="24" height="24"
+                            alt="Facebook">
+                    </a>
+                    <a class="social__link" target="_parent" href="">
+                        <img class="social__icon" src="assets/img/svg/icon_bag.svg" width="24" height="24"
+                            alt="Facebook">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- <div class="breadcrumbs">breadcrumbs</div>-->
+        <header class="header-page">
+            <div>
+                <h2>Catalogue d’éncheres</h2>
+            </div>
+            <div class="top_tri">
+                <p>Trier par: </p>
+                <select name="sort-order" class="custom-select" aria-label="Sort By">
+                    <option value="Prix bas-élevé">Prix bas-élevé</option>
+                    <option value="Prix élevé-bas">Prix élevé-bas</option>
+                    <option value="Pertinence">Pertinence</option>
+                    <option value="Parution plus récente">Nouveautés</option>
+                    <option value="Best-sellers">Best-sellers</option>
+                </select>
+            </div>
+
+        </header>
+        <div class="filtres flex-row">
+            <aside class="filtres">
+                <div class="flex-row justify">
+                    <h4>Filtres:</h4>
+                    <p class="effacer">Réinitialiser</p>
+                </div>
+                <section class="accordion">
+                    <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb1" checked>
+                        <label for="cb1" class="tab__label">Status</label>
+                        <div class="tab__content">
+                            <p>En cours</p>
+                            <p>Archivées</p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb2">
+                        <label for="cb2" class="tab__label">Catégories</label>
+                        <div class="tab__content">
+                            <p>Raretés</p>
+                            <p>Coups de couer du Lord</p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb3">
+                        <label for="cb3" class="tab__label">Pays</label>
+
+                        <div class="tab__content">
+                            <p>Angleterre</p>
+                            <p>Canada</p>
+                            <p>États-Unis</p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb4">
+                        <label for="cb4" class="tab__label">Couleur</label>
+                        <div class="tab__content">
+                            <p>Rouge</p>
+                            <p>Bleu</p>
+                            <p>Vert</p>
+                        </div>
+                    </div>
+                </section>
+
+            </aside>
+            <div class="grille">
+                <!-- CARTE DEBUT-->
+                <article class="carte">
+                    <header class="status flex-row">
+                        <div class="status"><img class="social__icon" src="assets/img/svg/icon_status.svg" width="14"
+                                height="14" alt="Status"><span class="status-rouge">En cours</span></div>
+                        <div class="date-duration">15/06/24 à 30/11/2024</div>
+                    </header>
+                    <picture><img src="assets/img/timbres/P201011151-1.jpg" alt="EXEMPLE STAMP"></picture>
+                    <div class="contenu">
+                        <div class="produit-titre">
+                            <small>Lot: 230</small>
+                            <h3>ASCENSION 1915 SGZ44 1912-22 3d brown</h3>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Offre actuelle: <span class="nomdumembre">nomdumembre</span></div>
+                                <div><span class="prix">$2,000</span></div>
+                            </div>
+                            <div class="mises">Quantité de mises: 3</div>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Estimation:</div>
+                                <div>$1,000 - $5,000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offre flex-row justify">
+                        <div><a href="produit.html" class="plus_info"><img class="plus_info"
+                                    src="assets/img/svg/icon_info.svg" width="13" height="13"
+                                    alt="Plus d'information">Plus
+                                d'information</a> </div>
+                        <button><a href="produit.html">Faire une offre</a></button>
+                    </div>
+                </article>
+                <!-- CARTE FIN-->
+                <!-- CARTE DEBUT-->
+                <article class="carte">
+                    <header class="status flex-row">
+                        <div class="status"><img class="social__icon" src="assets/img/svg/icon_status.svg" width="14"
+                                height="14" alt="Status"><span class="status-rouge">En cours</span></div>
+                        <div class="date-duration">15/06/24 à 30/11/2024</div>
+                    </header>
+                    <i class="tag_coupsdecouer">Coup de coeur du Lord</i>
+                    <picture><img src="assets/img/timbres/P201011142-1.jpg" alt="EXEMPLE STAMP"></picture>
+                    <div class="contenu">
+                        <div class="produit-titre">
+                            <small>Lot: 230</small>
+                            <h3>ASCENSION 1915 SGZ44 1912-22 3d green</h3>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Offre actuelle: <span class="nomdumembre">nomdumembre</span></div>
+                                <div><span class="prix">$2,000</span></div>
+                            </div>
+                            <div class="mises">Quantité de mises: 3</div>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Estimation:</div>
+                                <div>$1,000 - $5,000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offre flex-row justify">
+                        <div><a href="produit.html" class="plus_info"><img class="plus_info"
+                                    src="assets/img/svg/icon_info.svg" width="13" height="13"
+                                    alt="Plus d'information">Plus
+                                d'information</a> </div>
+                        <button><a href="produit.html">Faire une offre</a></button>
+                    </div>
+                </article>
+                <!-- CARTE FIN-->
+                <!-- CARTE DEBUT-->
+                <article class="carte">
+                    <header class="status flex-row">
+                        <div class="status"><img class="social__icon" src="assets/img/svg/icon_status.svg" width="14"
+                                height="14" alt="Status"><span class="status-rouge">En cours</span></div>
+                        <div class="date-duration">15/06/24 à 30/11/2024</div>
+                    </header>
+                    <picture><img src="assets/img/timbres/P201011154-1.jpg" alt="EXEMPLE STAMP"></picture>
+                    <div class="contenu">
+                        <div class="produit-titre">
+                            <small>Lot: 20</small>
+                            <h3>ASCENSION 1915 SGZ44 1912-22 3d blue</h3>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Offre actuelle: <span class="nomdumembre">nomdumembre</span></div>
+                                <div><span class="prix">$2,000</span></div>
+                            </div>
+                            <div class="mises">Quantité de mises: 3</div>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Estimation:</div>
+                                <div>$1,000 - $5,000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offre flex-row justify">
+                        <div><a href="produit.html" class="plus_info"><img class="plus_info"
+                                    src="assets/img/svg/icon_info.svg" width="13" height="13"
+                                    alt="Plus d'information">Plus
+                                d'information</a> </div>
+                        <button><a href="produit.html">Faire une offre</a></button>
+                    </div>
+                </article>
+                <!-- CARTE FIN-->
+                <!-- CARTE DEBUT-->
+                <article class="carte">
+                    <header class="status flex-row">
+                        <div class="status"><img class="social__icon" src="assets/img/svg/icon_status.svg" width="14"
+                                height="14" alt="Status"><span class="status-rouge">En cours</span></div>
+                        <div class="date-duration">15/06/24 à 30/11/2024</div>
+                    </header>
+                    <i class="tag_raretes">Raretés</i>
+                    <picture><img src="assets/img/timbres/P201011148-1.jpg" alt="EXEMPLE STAMP"></picture>
+                    <div class="contenu">
+                        <div class="produit-titre">
+                            <small>Lot: 230</small>
+                            <h3>ASCENSION 1915 SGZ44 1912-22 3d violet</h3>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Offre actuelle: <span class="nomdumembre">nomdumembre</span></div>
+                                <div><span class="prix">$2,000</span></div>
+                            </div>
+                            <div class="mises">Quantité de mises: 3</div>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Estimation:</div>
+                                <div>$1,000 - $5,000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offre flex-row justify">
+                        <div><a href="produit.html" class="plus_info"><img class="plus_info"
+                                    src="assets/img/svg/icon_info.svg" width="13" height="13"
+                                    alt="Plus d'information">Plus
+                                d'information</a> </div>
+                        <button><a href="produit.html">Faire une offre</a></button>
+                    </div>
+                </article>
+                <!-- CARTE FIN--> <!-- CARTE DEBUT-->
+                <article class="carte">
+                    <header class="status flex-row">
+                        <div class="status"><img class="social__icon" src="assets/img/svg/icon_status.svg" width="14"
+                                height="14" alt="Status"><span class="status-rouge">En cours</span></div>
+                        <div class="date-duration">15/06/24 à 30/11/2024</div>
+                    </header>
+                    <i class="tag_coupsdecouer">Coup de coeur du Lord</i>
+                    <picture><img src="assets/img/timbres/P201011151-1.jpg" alt="EXEMPLE STAMP"></picture>
+                    <div class="contenu">
+                        <div class="produit-titre">
+                            <small>Lot: 230</small>
+                            <h3>ASCENSION 1915 SGZ44 1912-22 3d brown</h3>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Offre actuelle: <span class="nomdumembre">nomdumembre</span></div>
+                                <div><span class="prix">$2,000</span></div>
+                            </div>
+                            <div class="mises">Quantité de mises: 3</div>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Estimation:</div>
+                                <div>$1,000 - $5,000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offre flex-row justify">
+                        <div><a href="produit.html" class="plus_info"><img class="plus_info"
+                                    src="assets/img/svg/icon_info.svg" width="13" height="13"
+                                    alt="Plus d'information">Plus
+                                d'information</a> </div>
+                        <button><a href="produit.html">Faire une offre</a></button>
+                    </div>
+                </article>
+                <!-- CARTE FIN-->
+                <!-- CARTE DEBUT-->
+                <article class="carte">
+                    <header class="status flex-row">
+                        <div class="status"><img class="social__icon" src="assets/img/svg/icon_status.svg" width="14"
+                                height="14" alt="Status"><span class="status-rouge">En cours</span></div>
+                        <div class="date-duration">15/06/24 à 30/11/2024</div>
+                    </header>
+                    <picture><img src="assets/img/timbres/P201011142-1.jpg" alt="EXEMPLE STAMP"></picture>
+                    <div class="contenu">
+                        <div class="produit-titre">
+                            <small>Lot: 230</small>
+                            <h3>ASCENSION 1915 SGZ44 1912-22 3d green</h3>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Offre actuelle: <span class="nomdumembre">nomdumembre</span></div>
+                                <div><span class="prix">$2,000</span></div>
+                            </div>
+                            <div class="mises">Quantité de mises: 3</div>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Estimation:</div>
+                                <div>$1,000 - $5,000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offre flex-row justify">
+                        <div><a href="produit.html" class="plus_info"><img class="plus_info"
+                                    src="assets/img/svg/icon_info.svg" width="13" height="13"
+                                    alt="Plus d'information">Plus
+                                d'information</a> </div>
+                        <button><a href="produit.html">Faire une offre</a></button>
+                    </div>
+                </article>
+                <!-- CARTE FIN-->
+                <!-- CARTE DEBUT-->
+                <article class="carte">
+                    <header class="status flex-row">
+                        <div class="status"><img class="social__icon" src="assets/img/svg/icon_status.svg" width="14"
+                                height="14" alt="Status"><span class="status-rouge">En cours</span></div>
+                        <div class="date-duration">15/06/24 à 30/11/2024</div>
+                    </header>
+                    <i class="tag_coupsdecouer">Coup de coeur du Lord</i>
+                    <picture><img src="assets/img/timbres/P201011154-1.jpg" alt="EXEMPLE STAMP"></picture>
+                    <div class="contenu">
+                        <div class="produit-titre">
+                            <small>Lot: 20</small>
+                            <h3>ASCENSION 1915 SGZ44 1912-22 3d blue</h3>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Offre actuelle: <span class="nomdumembre">nomdumembre</span></div>
+                                <div><span class="prix">$2,000</span></div>
+                            </div>
+                            <div class="mises">Quantité de mises: 3</div>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Estimation:</div>
+                                <div>$1,000 - $5,000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offre flex-row justify">
+                        <div><a href="produit.html" class="plus_info"><img class="plus_info"
+                                    src="assets/img/svg/icon_info.svg" width="13" height="13"
+                                    alt="Plus d'information">Plus
+                                d'information</a> </div>
+                        <button><a href="produit.html">Faire une offre</a></button>
+                    </div>
+                </article>
+                <!-- CARTE FIN-->
+                <!-- CARTE DEBUT-->
+                <article class="carte">
+                    <header class="status flex-row">
+                        <div class="status"><img class="social__icon" src="assets/img/svg/icon_status.svg" width="14"
+                                height="14" alt="Status"><span class="status-rouge">En cours</span></div>
+                        <div class="date-duration">15/06/24 à 30/11/2024</div>
+                    </header>
+                    <i class="tag_raretes">Raretés</i>
+                    <picture><img src="assets/img/timbres/P201011148-1.jpg" alt="EXEMPLE STAMP"></picture>
+                    <div class="contenu">
+                        <div class="produit-titre">
+                            <small>Lot: 230</small>
+                            <h3>ASCENSION 1915 SGZ44 1912-22 3d violet</h3>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Offre actuelle: <span class="nomdumembre">nomdumembre</span></div>
+                                <div><span class="prix">$2,000</span></div>
+                            </div>
+                            <div class="mises">Quantité de mises: 3</div>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Estimation:</div>
+                                <div>$1,000 - $5,000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offre flex-row justify">
+                        <div><a href="produit.html" class="plus_info"><img class="plus_info"
+                                    src="assets/img/svg/icon_info.svg" width="13" height="13"
+                                    alt="Plus d'information">Plus
+                                d'information</a> </div>
+                        <button><a href="produit.html">Faire une offre</a></button>
+                    </div>
+                </article>
+                <!-- CARTE FIN-->
+
+                <!-- CARTE DEBUT-->
+                <article class="carte">
+                    <header class="status flex-row">
+                        <div class="status"><img class="social__icon" src="assets/img/svg/icon_status.svg" width="14"
+                                height="14" alt="Status"><span class="status-rouge">En cours</span></div>
+                        <div class="date-duration">15/06/24 à 30/11/2024</div>
+                    </header>
+                    <picture><img src="assets/img/timbres/P201011151-1.jpg" alt="EXEMPLE STAMP"></picture>
+                    <div class="contenu">
+                        <div class="produit-titre">
+                            <small>Lot: 230</small>
+                            <h3>ASCENSION 1915 SGZ44 1912-22 3d brown</h3>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Offre actuelle: <span class="nomdumembre">nomdumembre</span></div>
+                                <div><span class="prix">$2,000</span></div>
+                            </div>
+                            <div class="mises">Quantité de mises: 3</div>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Estimation:</div>
+                                <div>$1,000 - $5,000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offre flex-row justify">
+                        <div><a href="produit.html" class="plus_info"><img class="plus_info"
+                                    src="assets/img/svg/icon_info.svg" width="13" height="13"
+                                    alt="Plus d'information">Plus
+                                d'information</a> </div>
+                        <button><a href="produit.html">Faire une offre</a></button>
+                    </div>
+                </article>
+                <!-- CARTE FIN-->
+                <!-- CARTE DEBUT-->
+                <article class="carte">
+                    <header class="status flex-row">
+                        <div class="status"><img class="social__icon" src="assets/img/svg/icon_status.svg" width="14"
+                                height="14" alt="Status"><span class="status-rouge">En cours</span></div>
+                        <div class="date-duration">15/06/24 à 30/11/2024</div>
+                    </header>
+                    <picture><img src="assets/img/timbres/P201011142-1.jpg" alt="EXEMPLE STAMP"></picture>
+                    <div class="contenu">
+                        <div class="produit-titre">
+                            <small>Lot: 230</small>
+                            <h3>ASCENSION 1915 SGZ44 1912-22 3d green</h3>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Offre actuelle: <span class="nomdumembre">nomdumembre</span></div>
+                                <div><span class="prix">$2,000</span></div>
+                            </div>
+                            <div class="mises">Quantité de mises: 3</div>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Estimation:</div>
+                                <div>$1,000 - $5,000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offre flex-row justify">
+                        <div><a href="produit.html" class="plus_info"><img class="plus_info"
+                                    src="assets/img/svg/icon_info.svg" width="13" height="13"
+                                    alt="Plus d'information">Plus
+                                d'information</a> </div>
+                        <button><a href="produit.html">Faire une offre</a></button>
+                    </div>
+                </article>
+                <!-- CARTE FIN-->
+                <!-- CARTE DEBUT-->
+                <article class="carte">
+                    <header class="status flex-row">
+                        <div class="status"><img class="social__icon" src="assets/img/svg/icon_status.svg" width="14"
+                                height="14" alt="Status"><span class="status-rouge">En cours</span></div>
+                        <div class="date-duration">15/06/24 à 30/11/2024</div>
+                    </header>
+                    <i class="tag_raretes">Raretés</i>
+                    <picture><img src="assets/img/timbres/P201011154-1.jpg" alt="EXEMPLE STAMP"></picture>
+                    <div class="contenu">
+                        <div class="produit-titre">
+                            <small>Lot: 20</small>
+                            <h3>ASCENSION 1915 SGZ44 1912-22 3d blue</h3>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Offre actuelle: <span class="nomdumembre">nomdumembre</span></div>
+                                <div><span class="prix">$2,000</span></div>
+                            </div>
+                            <div class="mises">Quantité de mises: 3</div>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Estimation:</div>
+                                <div>$1,000 - $5,000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offre flex-row justify">
+                        <div><a href="produit.html" class="plus_info"><img class="plus_info"
+                                    src="assets/img/svg/icon_info.svg" width="13" height="13"
+                                    alt="Plus d'information">Plus
+                                d'information</a> </div>
+                        <button><a href="produit.html">Faire une offre</a></button>
+                    </div>
+                </article>
+                <!-- CARTE FIN-->
+                <!-- CARTE DEBUT-->
+                <article class="carte">
+                    <header class="status flex-row">
+                        <div class="status"><img class="social__icon" src="assets/img/svg/icon_status.svg" width="14"
+                                height="14" alt="Status"><span class="status-rouge">En cours</span></div>
+                        <div class="date-duration">15/06/24 à 30/11/2024</div>
+                    </header>
+                    <picture><img src="assets/img/timbres/P201011148-1.jpg" alt="EXEMPLE STAMP"></picture>
+                    <div class="contenu">
+                        <div class="produit-titre">
+                            <small>Lot: 230</small>
+                            <h3>ASCENSION 1915 SGZ44 1912-22 3d violet</h3>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Offre actuelle: <span class="nomdumembre">nomdumembre</span></div>
+                                <div><span class="prix">$2,000</span></div>
+                            </div>
+                            <div class="mises">Quantité de mises: 3</div>
+                        </div>
+                        <div class="flex-column produit-info border">
+                            <div class="flex-row justify">
+                                <div>Estimation:</div>
+                                <div>$1,000 - $5,000</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offre flex-row justify">
+                        <div><a href="produit.html" class="plus_info"><img class="plus_info"
+                                    src="assets/img/svg/icon_info.svg" width="13" height="13"
+                                    alt="Plus d'information">Plus
+                                d'information</a> </div>
+                        <button><a href="produit.html">Faire une offre</a></button>
+                    </div>
+                </article>
+                <!-- CARTE FIN-->
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mainfooter">
+        <div class="footer-top padding">
+            <div class="footer_icons">
+                <div class="logo_footer">
+                    <a href="catalogue.html">
+                        <picture>
+                            <img src="assets/img/svg/stampee_logo.svg" width="200px" alt="logo stampee">
+                        </picture>
+                    </a>
+                </div>
+                <nav class="navigation_reseaux">
+                    <a class="social__link" href="https://www.facebook.com/">
+                        <img class="social__icon" src="assets/img/svg/icon_facebook.svg" width="20" height="20"
+                            alt="Facebook">
+                    </a>
+                    <a class="social__link" href="https://www.instagram.com/">
+                        <img class="social__icon" src="assets/img/svg/icon_instagram.svg" width="20" height="20"
+                            alt="Instagram">
+                    </a>
+                    <a class="social__link" href="https://www.linkedin.com/">
+                        <img class="social__icon" src="assets/img/svg/icon_linkedin.svg" width="20" height="20"
+                            alt="LinkedIn">
+                    </a>
+                    <a class="social__link" href="https://www.youtube.com/watch?v=ngjEVKxQCWs">
+                        <img class="social__icon" src="assets/img/svg/icon_youtube.svg" width="20" height="20"
+                            alt="Youtube">
+                    </a>
+            </div>
+            <div class="footer_section newsletter_section">
+                <h3>Inscrivez-vous à notre newsletter</h3>
+                <p>Découvrez les dernières actualités, les offres spéciales et les mises à jour que nous proposons.</p>
+                <div class="newsletter_input">
+                    <input type="text" placeholder="Votre email"><input type="button" value="S’abonner">
+                </div>
+            </div>
+            <div class="footer_section_f">
+                <h3>Fonctionnement</h3>
+                <p>Aide « Profil »</p>
+                <p>Aide « Comment placer une offre »</p>
+                <p>Aide « Suivre une enchère »</p>
+                <p>Aide « Trouver l’enchère désirée »</p>
+                <p>Contacter le webmestre</p>
+            </div>
+            <div class="footer_section_c">
+                <h3>Contactez-nous</h3>
+                <p>Angleterre</p>
+                <p>Canada</p>
+                <p>États-Unis</p>
+                <p>Australie</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>© 2024 Stampee</div>
+            <div>
+                <a href="">Terms</a> |
+                <a href="">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
